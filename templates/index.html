@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head><title>PlaidWeb</title>
+</head><body>
+    <h1>PlaidWeb</h1>
+
+    <p>Better website coming eventually. Meanwhile:</p>
+
+    <ul>
+        {% for item in view(entry_type='link',order='title').entries %}
+        <li><a href="{{item.link}}">{{item.title}}</a>: {{item.summary}}</li>
+        {% endfor %}
+    </ul>
+</body></html>
