@@ -33,4 +33,4 @@ while [ $count -lt 5 ] && [ ! -S $HOME/.vhosts/plaidweb.site ] ; do
     sleep $count
 done
 
-#pipenv run pushl -rvvc $HOME/var/pushl http://plaidweb.site/feed https://plaidweb.site/feed
+#poetry run pushl -rvvc $HOME/var/pushl http://plaidweb.site/feed https://plaidweb.site/feed
