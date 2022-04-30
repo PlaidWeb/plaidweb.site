@@ -7,7 +7,7 @@
 
     <ul>
         {% for item in view(entry_type='link',order='title').entries %}
-        <li><a href="{{item.link}}">{{item.title}}</a>: {{item.summary}}</li>
+        <li><a href="{{item.link}}">{{item.title}}</a>: {{item.summary(markup=False)}}</li>
         {% endfor %}
     </ul>
 </body></html>
