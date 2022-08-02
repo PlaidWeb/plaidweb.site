@@ -33,6 +33,8 @@ config = {
         'filename': os.path.join(APP_PATH, 'index.db')
     },
 
+    'index_enable_watchdog': os.environ.get('FLASK_DEBUG'),
+
     # How many image rendering threads to use
     'image_render_threads': 2,
 
