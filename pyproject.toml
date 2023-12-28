@@ -5,9 +5,9 @@ description = ""
 authors = ["fluffy <fluffy@beesbuzz.biz>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8.1,<4.0"
 gunicorn = "*"
-publ = "*"
+publ = "^0.7.28"
 flask-hookserver = "*"
 python-memcached = "*"
 
